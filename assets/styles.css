@@ -57,6 +57,9 @@ div.padding {
 img {
   border-radius: 25px;
   opacity: 1;
+  border-style: double;
+  border-width: medium;
+  border-color: blue;
 }
 
 img:hover {
@@ -67,6 +70,7 @@ img:hover {
   left: 15%;
   mar: 15%;
   bottom: auto;
+  cursor: pointer;
 }
 
 iframe:hover {
@@ -77,6 +81,7 @@ iframe:hover {
   left: 15%;
   right: 15%;
   bottom: auto;
+  cursor: pointer;
 }
 
 /* Video managed in YouTube */
@@ -86,5 +91,8 @@ video {
 
 iframe {
   border-radius: 10px;
+  border-style: double;
+  border-width: medium;
+  border-color: blue;
 }
 
