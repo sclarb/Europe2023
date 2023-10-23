@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Young Serif";
+  src: url(./fonts/YoungSerif-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(./fonts/Raleway-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Young Serif";
+}
+
+body {
+  font-family: "Raleway";
+}
+
+h1 {
+  color:blue;
+  text-align: center;
+}
+h2 {
+  color:dodgerblue;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h3 {
+  text-align: center;
+}
+
+div.picpos {
+  width: auto;
+}
+
+div.center {
+  text-align: center;
+}
+
+div.padding {
+  padding: 10px;
+}
+
+img {
+  border-radius: 25px;
+  opacity: 1;
+}
+
+img:hover {
+  opacity: 1.5;
+  transform: scale(2);
+  position: relative;
+  top: auto;
+  left: 15%;
+  right: 15%;
+  bottom: auto;
+}
+
+iframe:hover {
+  opacity: 1.5;
+  transform: scale(2);
+  position: relative;
+  top: auto;
+  left: 15%;
+  right: 15%;
+  bottom: auto;
+}
+
+video {
+  border-radius: 10px;
+}
+
+iframe {
+  border-radius: 10px;
+}
