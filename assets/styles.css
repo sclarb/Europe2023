@@ -1,3 +1,4 @@
+/* Downloaded fonts from Google */
 @font-face {
   font-family: "Young Serif";
   src: url(./fonts/YoungSerif-Regular.ttf);
@@ -55,9 +56,9 @@ img:hover {
   opacity: 1.5;
   transform: scale(2);
   position: relative;
-  top: auto;
+  margin-top: auto;
   left: 15%;
-  right: 15%;
+  mar: 15%;
   bottom: auto;
 }
 
@@ -71,6 +72,7 @@ iframe:hover {
   bottom: auto;
 }
 
+/* Video managed in YouTube */
 video {
   border-radius: 10px;
 }
