@@ -13,36 +13,32 @@
   font-style: normal;
 }
 
+/*Headings*/
+
 h1, h2, h3, h4, h5 {
   font-family: "Young Serif";
+  text-align: center;
+  margin: 15px;
 }
+
+h1 {
+  color:blue;
+}
+h2 {
+  color:dodgerblue;
+}
+
+/*Body*/
 
 body {
   font-family: "Raleway";
 }
 
-h1 {
-  color:blue;
-  text-align: center;
-}
-h2 {
-  color:dodgerblue;
-  text-align: center;
-  text-decoration: underline;
-}
-
-h3 {
-  text-align: center;
-}
-
 /* div classes */
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
 
-div.picpos {
-  width: auto;
+div.writing {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 div.center {
@@ -56,6 +52,7 @@ div.padding {
 hr {
   padding: 2px;
   background-color: blueviolet;
+  margin: 25px;
 }
 
 /* img effects */
@@ -63,29 +60,13 @@ img {
   border-radius: 25px;
   opacity: 1;
   border-style: double;
-  border-width: medium;
+  border-width: thick;
   border-color: blue;
 }
 
 img:hover {
   opacity: 1.5;
   transform: scale(1.5);
-  object-position: center;
-  margin-top: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  bottom: 15px;
-  cursor: pointer;
-}
-
-iframe:hover {
-  opacity: 1.5;
-  transform: scale(2);
-  position: relative;
-  top: auto;
-  left: 15%;
-  right: 15%;
-  bottom: auto;
   cursor: pointer;
 }
 
@@ -97,7 +78,7 @@ video {
 iframe {
   border-radius: 10px;
   border-style: double;
-  border-width: medium;
+  border-width: thick;
   border-color: blue;
 }
 
