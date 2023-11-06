@@ -14,6 +14,29 @@
 <!-- Load external CSS -->
   <link rel="stylesheet" href="assets/styles.css">
 
+<!-- Enlarge image script -->
+  <script>
+    function enlargeImage(image) {
+        // Get the enlarged image element
+        var enlargedImage = document.getElementById("enlarged-image");
+
+        // Set the source of the enlarged image to the clicked image
+        enlargedImage.src = image.src;
+
+        // Display the enlarged image
+        enlargedImage.style.display = "block";
+    }
+
+    function closeImage() {
+        // Hide the enlarged image
+        var enlargedImage = document.getElementById("enlarged-image");
+        enlargedImage.style.display = "none";
+    }
+  </script>
+
+<!-- Close enlarged image -->
+<img id="enlarged-image" alt="Enlarged Image" onclick="closeImage()">
+
 </head>  
 
 <body>
@@ -53,9 +76,9 @@
   </div>
 
   <div class="center">
-    <img id="myImg" src="images/LondonTube.jpg" alt="LondonTube" height="300">
-    <img src="images/SearcyBarOrderButton.jpg" alt="SearcyBarOrderButton"  height="300">
-    <img src="images/SearcyBarChrisCarolyn.jpg" alt="SearcyBarChrisCarolyn"  height="300">
+    <img src="images/LondonTube.jpg" alt="LondonTube" height="300" onclick="enlargeImage(this)">
+    <img src="images/SearcyBarOrderButton.jpg" alt="SearcyBarOrderButton"  height="300" onclick="enlargeImage(this)">
+    <img src="images/SearcyBarChrisCarolyn.jpg" alt="SearcyBarChrisCarolyn"  height="300" onclick="enlargeImage(this)">
   </div>
 
   <div class="writing">
@@ -83,10 +106,10 @@
   </div>
 
   <div class="center">
-    <img src="images/AmsterdamHotelView1.jpg" alt="Amsterdam Movenpick Hotel"  height="300">
-    <img src="images/AmsterdamHotelView2.jpg" alt="Amsterdam Movenpick Hotel"  height="300">
-    <img src="images/AmsterdamHotelView3.jpg" alt="Amsterdam Movenpick Hotel"  height="300">
-    <img src="images/AmsterdamHotelView4.jpg" alt="Amsterdam Movenpick Hotel"  height="300">
+    <img src="images/AmsterdamHotelView1.jpg" alt="Amsterdam Movenpick Hotel"  height="300" onclick="enlargeImage(this)">
+    <img src="images/AmsterdamHotelView2.jpg" alt="Amsterdam Movenpick Hotel"  height="300" onclick="enlargeImage(this)">
+    <img src="images/AmsterdamHotelView3.jpg" alt="Amsterdam Movenpick Hotel"  height="300" onclick="enlargeImage(this)">
+    <img src="images/AmsterdamHotelView4.jpg" alt="Amsterdam Movenpick Hotel"  height="300" onclick="enlargeImage(this)">
   </div>
   
   <h2><hr></h2>
@@ -103,12 +126,12 @@
   </div>
 
   <div class="center">
-    <img src="images/Bimhuis.jpg" alt="Bimhuis Concert Hall"  height="300">
-    <img src="images/BimhuisBrad.jpg" alt="Bimhuis and Brad"  height="300">
-    <img src="images/FirstMealKara.jpg" alt="Eating on the Kara Deck"  height="300">
-    <img src="images/AmsterdamWalk.jpg" alt="Amsterdam walk"  height="300">
-    <img src="images/CarolynonShipReplica.jpg" alt="Carolyn on Ship Replica"  height="300">
-    <img src="images/CarolynonShipReplica2.jpg" alt="Carolyn on Ship Replica"  height="300">
+    <img src="images/Bimhuis.jpg" alt="Bimhuis Concert Hall"  height="300" onclick="enlargeImage(this)">
+    <img src="images/BimhuisBrad.jpg" alt="Bimhuis and Brad"  height="300" onclick="enlargeImage(this)">
+    <img src="images/FirstMealKara.jpg" alt="Eating on the Kara Deck"  height="300" onclick="enlargeImage(this)">
+    <img src="images/AmsterdamWalk.jpg" alt="Amsterdam walk"  height="300" onclick="enlargeImage(this)">
+    <img src="images/CarolynonShipReplica.jpg" alt="Carolyn on Ship Replica"  height="300" onclick="enlargeImage(this)">
+    <img src="images/CarolynonShipReplica2.jpg" alt="Carolyn on Ship Replica"  height="300" onclick="enlargeImage(this)">
   </div>
 
   <div class="writing">
@@ -116,10 +139,10 @@
   </div>
 
   <div class="center">
-    <img src="images/Kinderdijk.jpg" alt="Carolyn on Ship Replica"  height="300">
-    <img src="images/Kinderdijk1.jpg" alt="Carolyn on Ship Replica"  height="300">
-    <img src="images/Kinderdijk2.jpg" alt="Carolyn on Ship Replica"  height="300">
-    <img src="images/Kinderdijk3.jpg" alt="The intrepid travelers" height="300">
+    <img src="images/Kinderdijk.jpg" alt="Carolyn on Ship Replica"  height="300" onclick="enlargeImage(this)">
+    <img src="images/Kinderdijk1.jpg" alt="Carolyn on Ship Replica"  height="300" onclick="enlargeImage(this)">
+    <img src="images/Kinderdijk2.jpg" alt="Carolyn on Ship Replica"  height="300" onclick="enlargeImage(this)">
+    <img src="images/Kinderdijk3.jpg" alt="The intrepid travelers" height="300" onclick="enlargeImage(this)">
   </div>
 
   <div class="writing">
@@ -128,7 +151,7 @@
   </div>
 
   <div class="center">
-    <img src="images/RotterdamSunset.jpg" alt="Rotterdam Sunset"  height="300" target="_blank">
+    <img src="images/RotterdamSunset.jpg" alt="Rotterdam Sunset"  height="300" onclick="enlargeImage(this)">
     <iframe width="560" height="300" src="https://www.youtube.com/embed/LEFTtaD6084?si=0hSCqLfw6UBcwWk-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 
@@ -148,15 +171,15 @@
   </div>
 
   <div class="center">
-    <img src="images/CarolynCathedral.jpg" alt="Carolyn Cathedral"  height="300">
-    <img src="images/BradCarolynCologneCathedral.jpg" alt="Brad Carolyn Cathedral"  height="300">
-    <img src="images/CologneLoveLocks.jpg" alt="Cologne Love Locks"  height="300">
+    <img src="images/CarolynCathedral.jpg" alt="Carolyn Cathedral"  height="300" onclick="enlargeImage(this)">
+    <img src="images/BradCarolynCologneCathedral.jpg" alt="Brad Carolyn Cathedral"  height="300" onclick="enlargeImage(this)">
+    <img src="images/CologneLoveLocks.jpg" alt="Cologne Love Locks"  height="300" onclick="enlargeImage(this)">
   </div>
 
   <div class="center">
-    <img src="images/CologneCathedralChrisPaul.jpg" alt="Chris Paul Cologne Cathedral"  height="300">
-    <img src="images/CologneCathedralBoatView.jpg" alt="Cologne Cathedral Boat View"  height="300">
-    <img src="images/CologneCathedralPerspective.jpg" alt="Cologne Cathedral Perspective"  height="300">
+    <img src="images/CologneCathedralChrisPaul.jpg" alt="Chris Paul Cologne Cathedral"  height="300" onclick="enlargeImage(this)">
+    <img src="images/CologneCathedralBoatView.jpg" alt="Cologne Cathedral Boat View"  height="300" onclick="enlargeImage(this)">
+    <img src="images/CologneCathedralPerspective.jpg" alt="Cologne Cathedral Perspective"  height="300" onclick="enlargeImage(this)">
   </div>
 
   <div class="writing">
@@ -168,10 +191,10 @@
   </div>
 
   <div class="center">
-    <img src="images/Carolynreadytotour.jpg" alt="Carolyn ready to tour" height="300">
-    <img src="images/Karaeating.jpg" alt="Kara dinners" height="300">
-    <img src="images/Karasunset.jpg" alt="Sunset from the deck" height="300">
-    <img src="images/Vikingdaily.jpg" alt="Daily Schedule" height="300">
+    <img src="images/Carolynreadytotour.jpg" alt="Carolyn ready to tour" height="300" onclick="enlargeImage(this)">
+    <img src="images/Karaeating.jpg" alt="Kara dinners" height="300" onclick="enlargeImage(this)">
+    <img src="images/Karasunset.jpg" alt="Sunset from the deck" height="300" onclick="enlargeImage(this)">
+    <img src="images/Vikingdaily.jpg" alt="Daily Schedule" height="300" onclick="enlargeImage(this)">
   </div>
 
   <hr>
@@ -186,9 +209,9 @@
   <br>
 
   <div class="center">
-    <img src="images/KoblenzFountain.jpg" alt="Koblenz Historiensäule fountain" height="300">
-    <img src="images/KoblenzShopWindow.jpg" alt="Koblenz Shop Window" height="300">
-    <img src="images/KoblenzStreet.jpg" alt="Koblenz Street" height="300">
+    <img src="images/KoblenzFountain.jpg" alt="Koblenz Historiensäule fountain" height="300" onclick="enlargeImage(this)">
+    <img src="images/KoblenzShopWindow.jpg" alt="Koblenz Shop Window" height="300" onclick="enlargeImage(this)">
+    <img src="images/KoblenzStreet.jpg" alt="Koblenz Street" height="300" onclick="enlargeImage(this)">
   </div>
 
   <hr>
@@ -205,9 +228,9 @@
   </div>
   
   <div class="center">
-    <img src="images/Rhinecastle.jpg" alt="Rhine castle from the boat" height="300">
-    <img src="images/Marktplatz.jpg" alt="Marktplatz" height="300">
-    <img src="images/Redwood.jpg" alt="Redwood" height="300">
+    <img src="images/Rhinecastle.jpg" alt="Rhine castle from the boat" height="300" onclick="enlargeImage(this)">
+    <img src="images/Marktplatz.jpg" alt="Marktplatz" height="300" onclick="enlargeImage(this)">
+    <img src="images/Redwood.jpg" alt="Redwood" height="300" onclick="enlargeImage(this)">
   </div>
 
   <hr>
@@ -228,9 +251,9 @@
   </div>
 
   <div class="center">
-    <img src="images/Heidelberglunch.jpg" alt="Heidelberg lunch" height="300">
-    <img src="images/Heidelbergview.jpg" alt="Heidelberg view" height="300">
-    <img src="images/Heidelbergvista.jpg" alt="Heidelberg lunch" height="300">
+    <img src="images/Heidelberglunch.jpg" alt="Heidelberg lunch" height="300" onclick="enlargeImage(this)">
+    <img src="images/Heidelbergview.jpg" alt="Heidelberg view" height="300" onclick="enlargeImage(this)">
+    <img src="images/Heidelbergvista.jpg" alt="Heidelberg lunch" height="300" onclick="enlargeImage(this)">
   </div>
 
   <hr>
@@ -244,19 +267,19 @@
   </div>
 
   <div class="center">
-    <img src="images/StrasbourgStreet.jpg" alt="Strasbourg street" height="300">
-    <img src="images/StrasbourgAmble.jpg" alt="Strasbourg amble" height="300">
-    <img src="images/Strasbourgcanal.jpg" alt="Strasbourg canal" height="300">
-    <img src="images/Strasbourgcanalcarolyn.jpg" alt="Strasbourg Carolyn" height="300">
-    <img src="images/Strasbourgcharm.jpg" alt="Strasbourg charm" height="300">
-    <img src="images/Strasbourgcheese.jpg" alt="Strasbourg cheese" height="300">
-    <img src="images/Strasbourgpastries.jpg" alt="Strasbourg pastries" height="300">
-    <img src="images/Strasbourgpark.jpg" alt="Strasbourg park" height="300">
-    <img src="images/StrasbourgWindow.jpg" alt="Strasbourg window" height="300">
-    <img src="images/Strasbourgcafe.jpg" alt="Strasbourg cafe" height="300">
-    <img src="images/Strasbourgdoor.jpg" alt="Strasbourg door" height="300">
+    <img src="images/StrasbourgStreet.jpg" alt="Strasbourg street" height="300" onclick="enlargeImage(this)">
+    <img src="images/StrasbourgAmble.jpg" alt="Strasbourg amble" height="300" onclick="enlargeImage(this)">
+    <img src="images/Strasbourgcanal.jpg" alt="Strasbourg canal" height="300" onclick="enlargeImage(this)">
+    <img src="images/Strasbourgcanalcarolyn.jpg" alt="Strasbourg Carolyn" height="300" onclick="enlargeImage(this)">
+    <img src="images/Strasbourgcharm.jpg" alt="Strasbourg charm" height="300" onclick="enlargeImage(this)">
+    <img src="images/Strasbourgcheese.jpg" alt="Strasbourg cheese" height="300" onclick="enlargeImage(this)">
+    <img src="images/Strasbourgpastries.jpg" alt="Strasbourg pastries" height="300" onclick="enlargeImage(this)">
+    <img src="images/Strasbourgpark.jpg" alt="Strasbourg park" height="300" onclick="enlargeImage(this)">
+    <img src="images/StrasbourgWindow.jpg" alt="Strasbourg window" height="300" onclick="enlargeImage(this)">
+    <img src="images/Strasbourgcafe.jpg" alt="Strasbourg cafe" height="300" onclick="enlargeImage(this)">
+    <img src="images/Strasbourgdoor.jpg" alt="Strasbourg door" height="300" onclick="enlargeImage(this)">
     <figure>
-      <img src="images/Strasbourgpeeking.jpg" alt="Strasbourg peeking" height="300">
+      <img src="images/Strasbourgpeeking.jpg" alt="Strasbourg peeking" height="300" onclick="enlargeImage(this)">
       <figcaption>Peeking (Beth needs to stand on her tippy toes more)</figcaption>
     </figure>
     
@@ -267,9 +290,9 @@
   </div>
 
   <div class="center">
-    <img src="images/Strasbourgcathedral.jpg" alt="Strasbourg cathedral" height="300">
-    <img src="images/Strasbourgcathedralspire.jpg" alt="Strasbourg cathedral spire" height="300">
-    <img src="images/Strasbourgcathedralwindows.jpg" alt="Strasbourg cathedral windows" height="300">
+    <img src="images/Strasbourgcathedral.jpg" alt="Strasbourg cathedral" height="300" onclick="enlargeImage(this)">
+    <img src="images/Strasbourgcathedralspire.jpg" alt="Strasbourg cathedral spire" height="300" onclick="enlargeImage(this)">
+    <img src="images/Strasbourgcathedralwindows.jpg" alt="Strasbourg cathedral windows" height="300" onclick="enlargeImage(this)">
   </div>
 
   <hr>
@@ -279,9 +302,9 @@
   </h2>
 
   <div class="center">
-    <img src="images/KlezmerBand.jpeg" alt="Klezmer Band"  height="300">
-    <img src="images/KlezmerBand1.jpg" alt="Klezmer Band"  height="300">
-    <img src="images/KlezmerBand2.jpg" alt="Klezmer Band" height="300">
+    <img src="images/KlezmerBand.jpeg" alt="Klezmer Band"  height="300" onclick="enlargeImage(this)">
+    <img src="images/KlezmerBand1.jpg" alt="Klezmer Band"  height="300" onclick="enlargeImage(this)">
+    <img src="images/KlezmerBand2.jpg" alt="Klezmer Band" height="300" onclick="enlargeImage(this)">
     <iframe height="300" src="https://www.youtube.com/embed/EwMH-Jzu7hM" title="Klezmer recording" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 
@@ -302,7 +325,7 @@
   </div>
 
   <div class="center">
-    <img src="images/CasaValtravaglia.jpg" alt="Casa Valtravaglia" height="300">
+    <img src="images/CasaValtravaglia.jpg" alt="Casa Valtravaglia" height="300" onclick="enlargeImage(this)">
   </div>
 
 
@@ -318,8 +341,8 @@
   </div>
 
   <div class="center">
-    <img src="images/PortoValtravaglia.jpg" alt="PortoValtravaglia"  height="300">
-    <img src="images/CastelvecanaLunch.jpg" alt="Castelvacana lunch"  height="300">
+    <img src="images/PortoValtravaglia.jpg" alt="PortoValtravaglia"  height="300" onclick="enlargeImage(this)">
+    <img src="images/CastelvecanaLunch.jpg" alt="Castelvacana lunch"  height="300" onclick="enlargeImage(this)">
   </div>
 
   <hr>
@@ -341,9 +364,9 @@
   </div>
 
   <div class="center">
-    <img src="images/ZurichOperaDinner.jpg" alt="Zurich Opera" height="300">
-    <img src="images/ZurichOpera.jpg" alt="Zurich Opera" height="300">
-    <img src="images/ZurichOperaInside.jpg" alt="Zurich Opera" height="300">
+    <img src="images/ZurichOperaDinner.jpg" alt="Zurich Opera" height="300" onclick="enlargeImage(this)">
+    <img src="images/ZurichOpera.jpg" alt="Zurich Opera" height="300" onclick="enlargeImage(this)">
+    <img src="images/ZurichOperaInside.jpg" alt="Zurich Opera" height="300" onclick="enlargeImage(this)">
   </div>
 
   <hr>
@@ -356,7 +379,7 @@
 
   <div class="center">
     <figure>
-      <img src="images/ZurichSwimTeam.jpg" alt="Zurich Swim Team" title="Zurich Swim Team" height="300">
+      <img src="images/ZurichSwimTeam.jpg" alt="Zurich Swim Team" title="Zurich Swim Team" height="300" onclick="enlargeImage(this)">
       <figcaption class="center">Zurich Swim Team</figcaption>
     </figure>
   </div>
@@ -376,13 +399,13 @@
   </div>
 
   <div class="center">
-    <img src="images/StPaul.jpg" alt="Zurich Opera" height="300">
-    <img src="images/StPaulApseCeiling.jpg" alt="Zurich Opera" height="300">
-    <img src="images/StPaulApseExit.jpg" alt="Zurich Opera" height="300">
-    <img src="images/StPaulApseSeating.jpg" alt="Zurich Opera" height="300">
-    <img src="images/StPaulApseView.jpg" alt="Zurich Opera" height="300">
-    <img src="images/StPaulCarolyn.jpg" alt="Zurich Opera" height="300">
-    <img src="images/StPaulPlayConsole.jpg" alt="Zurich Opera" height="300">
+    <img src="images/StPaul.jpg" alt="Zurich Opera" height="300" onclick="enlargeImage(this)">
+    <img src="images/StPaulApseCeiling.jpg" alt="Zurich Opera" height="300" onclick="enlargeImage(this)">
+    <img src="images/StPaulApseExit.jpg" alt="Zurich Opera" height="300" onclick="enlargeImage(this)">
+    <img src="images/StPaulApseSeating.jpg" alt="Zurich Opera" height="300" onclick="enlargeImage(this)">
+    <img src="images/StPaulApseView.jpg" alt="Zurich Opera" height="300" onclick="enlargeImage(this)">
+    <img src="images/StPaulCarolyn.jpg" alt="Zurich Opera" height="300" onclick="enlargeImage(this)">
+    <img src="images/StPaulPlayConsole.jpg" alt="Zurich Opera" height="300" onclick="enlargeImage(this)">
   </div>
 
   <div class="center"> 
@@ -406,10 +429,10 @@ Maybe pick up a Peaky Blinders replacement. The readers? Have Tina give them to 
   </div>
   
   <div class="center">
-    <img src="images/HeademUpMoveemOut.jpg" alt="Head em up and move em out" height="300">
-    <img src="images/LastLookLondon.jpg" alt="Last Look London" height="300">
-    <img src="images/WalktoPaddingtonStation.jpg" alt="Last Look London" height="300">
-    <img src="images/LongRideBack.jpg" alt="Last Look London" height="300">
+    <img src="images/HeademUpMoveemOut.jpg" alt="Head em up and move em out" height="300" onclick="enlargeImage(this)">
+    <img src="images/LastLookLondon.jpg" alt="Last Look London" height="300" onclick="enlargeImage(this)">
+    <img src="images/WalktoPaddingtonStation.jpg" alt="Last Look London" height="300" onclick="enlargeImage(this)">
+    <img src="images/LongRideBack.jpg" alt="Last Look London" height="300" onclick="enlargeImage(this)">
   </div>
 
 </body>

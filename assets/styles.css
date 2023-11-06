@@ -65,10 +65,10 @@ img {
 }
 
 img:hover {
-  opacity: 1.5;
-  transform: scale(1.5);
+  opacity: .75;
   cursor: pointer;
 }
+
 
 /* Video managed in YouTube */
 video {
@@ -82,3 +82,15 @@ iframe {
   border-color: blue;
 }
 
+/* CSS for the enlarged image */
+#enlarged-image {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  max-width: 90%;
+  max-height: 90%;
+  opacity: 1;
+}
