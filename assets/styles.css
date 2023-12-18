@@ -69,6 +69,39 @@ img:hover {
   cursor: pointer;
 }
 
+/* column styling */
+* {
+  box-sizing: border-box;
+}
+
+/* column styling - create 2 and 3 columns floating next to each other */
+.threecolumn {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.twocolumn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* column styling - clear floats after columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* column styling - responsive layout */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
 
 /* Video managed in YouTube */
 video {
