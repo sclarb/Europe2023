@@ -75,6 +75,12 @@ img:hover {
 }
 
 /* column styling - create 2 and 3 columns floating next to each other */
+.fourcolumn {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
 .threecolumn {
   float: left;
   width: 33.33%;
